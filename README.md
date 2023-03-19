@@ -13,6 +13,7 @@ I named my app   “POPKINO”.
 Background image created using https://imgcreator.zmo.ai/genwitht
 
 App icon made using romannurik/AndroidAssetStudio: A set of web-based tools for generating graphics and other assets that would eventually be in an Android application's res/ directory. (github.com)https://github.com/romannurik/AndroidAssetStudio
+
 (Referred document) : Change App Icon in React Native for Android and iOS - About React 
 https://aboutreact.com/react-native-change-app-icon/
 
