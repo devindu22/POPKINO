@@ -1,6 +1,7 @@
 # POPKINO
 
-final assignment of RMAD03
+final assignment of Rapid Mobile Application Development Course - Batch 03
+Provided by IJSE
 
 Assignment Title: React Native Movie App
 
