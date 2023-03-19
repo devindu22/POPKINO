@@ -8,7 +8,7 @@ I named my app   “POPKINO”.
 “KINO” means CINEMA  or MOVIE THEATER in Deutsch.
 
 
-“You eat popcorn at a movie theater”
+“You eat popcorn in movie theaters”
 
 Background image created using https://imgcreator.zmo.ai/genwitht
 
