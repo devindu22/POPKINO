@@ -86,7 +86,7 @@ const Signup = ({navigation}) => {
       <View style={styles.footerTextContainer}>
         <Text style={styles.footerText1}>Already have an account? </Text>
         <ActionButton
-          title={'login'}
+          title={'Log in'}
           onPressBtn={() => navigation.navigate(Route.SIGNIN)}
           customTextStyle={[
             styles.footerText2,

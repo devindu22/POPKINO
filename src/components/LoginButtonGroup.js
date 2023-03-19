@@ -9,7 +9,7 @@ export const LoginButtonGroup = () => {
   return (
     <View style={styles.btnContainer}>
       <ActionButton
-        title={'FACEBOOK'}
+        title={'APPLE'}
         customStyle={styles.btnStyle}
         customTextStyle={styles.btnText}
         icon={<FBLogo />}
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     width: CommonStyles.width * 0.4,
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    borderRadius: 28,
+    borderRadius: 100,
     flexDirection: 'row',
   },
   gap: {
