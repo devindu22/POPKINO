@@ -13,3 +13,6 @@ contact me: devindu.m@outlook.com / devindu.nwcv@gmail.com
 
 #### Develop an app that loads movies from an API, search for movies through API, and save movies to a favourite list.
 
+##### screenshots
+
+Check out the screenshots file for a UI sneek peek!
