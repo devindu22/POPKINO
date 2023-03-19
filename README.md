@@ -6,7 +6,7 @@ My Github Account: https://github.com/devindu22
 
 contact me: devindu.m@outlook.com / devindu.nwcv@gmail.com
 
-##### Final Assignment of Rapid Mobile Application Development Course - Batch 03
+### Final Assignment of Rapid Mobile Application Development Course - Batch 03
 #### Provided by IJSE - Lecturer Mr.Shanilka Liyanage
 
 #### Assignment Title: React Native Movie App
