@@ -1,5 +1,5 @@
 # POPKINO
-A Movie / TV App built using React Native.
+## A Movie / TV App built using React Native.
 by devindu malshan
 
 My Github Account: https://github.com/devindu22
