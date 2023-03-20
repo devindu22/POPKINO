@@ -33,7 +33,3 @@ contact me: devindu.m@outlook.com / devindu.nwcv@gmail.com
 Check out the screenshots file for a UI sneek peek!
 
 FYI the screenshots were taken while in the dark mode of the device.
-
-https://github.com/devindu22/POPKINO/blob/main/src/screenshots/01icon_%26_app-name.png
-https://github.com/devindu22/POPKINO/blob/main/src/screenshots/02splash.png
-https://github.com/devindu22/POPKINO/blob/main/src/screenshots/03intro.png
