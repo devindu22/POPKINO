@@ -1,5 +1,5 @@
 # POPKINO
-### A Movie / TV App built using React Native.
+### A Movie App built using React Native.
 ###### by devindu malshan
 
 I named my app   “POPKINO”.
@@ -31,3 +31,5 @@ contact me: devindu.m@outlook.com / devindu.nwcv@gmail.com
 ### src/screenshots
 
 Check out the screenshots file for a UI sneek peek!
+
+FYI the screenshots were taken while in the dark mode of the device.
