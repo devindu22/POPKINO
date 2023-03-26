@@ -72,6 +72,10 @@ const Home = () => {
     setSelectedMovie(null);
   };
 
+  const handleMorePress = (title, movies) => {
+    navigation.navigate('MovieList', {title, movies});
+  };
+
   return (
     <ScrollView style={styles.container}>
       <Modal visible={showPopup} animationType="slide">
@@ -82,6 +86,11 @@ const Home = () => {
 
       <View style={styles.carouselContainer}>
         <Text style={styles.carouselTitle}>Top Rated</Text>
+        <TouchableOpacity
+          style={styles.moreButton}
+          onPress={() => handleMorePress('Top Rated', topRatedMovies)}>
+          <Text style={styles.moreButtonText}>More</Text>
+        </TouchableOpacity>
         <ScrollView horizontal>
           {topRatedMovies.map(movie => (
             <TouchableOpacity
@@ -100,6 +109,11 @@ const Home = () => {
 
       <View style={styles.carouselContainer}>
         <Text style={styles.carouselTitle}>Trending</Text>
+        <TouchableOpacity
+          style={styles.moreButton}
+          onPress={() => handleMorePress('Trending', trendingMovies)}>
+          <Text style={styles.moreButtonText}>More</Text>
+        </TouchableOpacity>
         <ScrollView horizontal>
           {trendingMovies.map(movie => (
             <TouchableOpacity
@@ -118,6 +132,11 @@ const Home = () => {
 
       <View style={styles.carouselContainer}>
         <Text style={styles.carouselTitle}>Popular</Text>
+        <TouchableOpacity
+          style={styles.moreButton}
+          onPress={() => handleMorePress('Popular', popularMovies)}>
+          <Text style={styles.moreButtonText}>More</Text>
+        </TouchableOpacity>
         <ScrollView horizontal>
           {popularMovies.map(movie => (
             <TouchableOpacity
@@ -136,6 +155,11 @@ const Home = () => {
 
       <View style={styles.carouselContainer}>
         <Text style={styles.carouselTitle}>Upcoming</Text>
+        <TouchableOpacity
+          style={styles.moreButton}
+          onPress={() => handleMorePress('Upcoming', upcomingMovies)}>
+          <Text style={styles.moreButtonText}>More</Text>
+        </TouchableOpacity>
         <ScrollView horizontal>
           {upcomingMovies.map(movie => (
             <TouchableOpacity
@@ -174,6 +198,14 @@ const styles = StyleSheet.create({
     width: 130,
     height: 200,
     marginRight: 10,
+  },
+  moreButtonText: {
+    color: '#7DD329',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    top: -32,
+    left: 150,
   },
   popupContainer: {
     flex: 1,

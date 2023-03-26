@@ -12,6 +12,7 @@ import MovieFile from '../screens/MovieFile';
 import Information from '../screens/Information';
 import MovieDetails from '../screens/MovieDetails';
 import WatchLaterList from '../screens/WatchLaterList';
+import MovieList from '../screens/MovieList';
 
 const Stack = createNativeStackNavigator();
 
@@ -58,6 +59,7 @@ const MainNavigation = () => {
         <Stack.Screen name="MovieDetails" component={MovieDetails} />
         <Stack.Screen name="WatchLaterList" component={WatchLaterList} />
         <Stack.Screen name="Information" component={Information} />
+        <Stack.Screen name="MovieList" component={MovieList} />
 
       </Stack.Navigator>
     </NavigationContainer>
