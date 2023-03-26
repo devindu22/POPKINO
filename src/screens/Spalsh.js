@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, StatusBar, Text} from 'react-native';
+import {SafeAreaView, StyleSheet, Text} from 'react-native';
 import CommonStyles from '../common/CommonStyles';
 import {Route} from '../common/Enums';
 import AsyncStorage from '@react-native-async-storage/async-storage';
