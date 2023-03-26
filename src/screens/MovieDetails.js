@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
+  TouchableWithoutFeedback,
   FlatList,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -57,6 +58,10 @@ export default function MovieDetails({route}) {
       })
       .catch(console.error);
   }
+
+  function handlePlayTrailer() {
+    navigation.navigate('MovieTrailerScreen', {movieId: movie.id});
+  }
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -64,6 +69,16 @@ export default function MovieDetails({route}) {
           style={styles.poster}
           source={{uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}`}}
         />
+        <TouchableWithoutFeedback onPress={handlePlayTrailer}>
+          <View style={styles.playButton}>
+            <Ionicons
+              name="play"
+              size={50}
+              style={{marginRight: 10, marginTop: 10, left: 150, top: -90}}
+              color="red"
+            />
+          </View>
+        </TouchableWithoutFeedback>
         <Text style={styles.title}>{movie.title}</Text>
         <Text style={styles.rating}>{`Rating: ${movie.vote_average}`}</Text>
         <Text style={styles.genres}>
