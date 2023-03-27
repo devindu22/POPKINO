@@ -37,7 +37,7 @@ const MovieTrailerScreen = ({route}) => {
     <View style={styles.container}>
       <WebView
         source={{uri: `https://www.youtube.com/embed/${trailerKey}`}}
-        style={styles.video}
+        style={{width: 380}}
       />
     </View>
   );
@@ -46,13 +46,9 @@ const MovieTrailerScreen = ({route}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  video: {
-    width: '100%',
-    height: '100%',
   },
 });
 
