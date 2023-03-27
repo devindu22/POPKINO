@@ -6,7 +6,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  TouchableWithoutFeedback,
   FlatList,
 } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -69,16 +68,14 @@ export default function MovieDetails({route}) {
           style={styles.poster}
           source={{uri: `https://image.tmdb.org/t/p/w500${movie.poster_path}`}}
         />
-        <TouchableWithoutFeedback onPress={handlePlayTrailer}>
+        <TouchableOpacity
+          onPress={handlePlayTrailer}
+          style={styles.playButtonStyle}>
           <View style={styles.playButton}>
-            <Ionicons
-              name="play"
-              size={50}
-              style={{marginRight: 10, marginTop: 10, left: 150, top: -90}}
-              color="red"
-            />
+            <Ionicons name="play" size={30} color="#FFf" />
+            <Text style={styles.playButtonText}>Play Trailer</Text>
           </View>
-        </TouchableWithoutFeedback>
+        </TouchableOpacity>
         <Text style={styles.title}>{movie.title}</Text>
         <Text style={styles.rating}>{`Rating: ${movie.vote_average}`}</Text>
         <Text style={styles.genres}>
@@ -92,7 +89,7 @@ export default function MovieDetails({route}) {
             name={isWatchLater ? 'bookmark' : 'bookmark-outline'}
             size={40}
             style={{marginRight: 10, marginTop: 10}}
-            color={isWatchLater ? 'red' : 'red'}
+            color={isWatchLater ? '#ff0000' : '#ff0000'}
           />
         </TouchableOpacity>
         <View style={styles.castContainer}>
@@ -229,5 +226,25 @@ const styles = StyleSheet.create({
   similarMovieTitle: {
     fontSize: 16,
     textAlign: 'center',
+  },
+  playButton: {
+    backgroundColor: '#FF0000',
+    borderRadius: 10,
+    padding: 10,
+    width: 80,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  playButtonText: {
+    color: '#FFFFFF',
+    fontSize: 8,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+  },
+  playButtonStyle: {
+    position: 'absolute',
+    top: 475,
+    right: 27,
   },
 });
