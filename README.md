@@ -39,7 +39,7 @@ FYI the screenshots were taken while in the dark mode of the device.
 Detailed Version Of The POPKINO App UI
 
 
-1. Splash Screen
+#### 1. Splash Screen
 
 This React Native functional component is named "Splash", and serves as a splash screen for the UI application “POPKINO”.
 
@@ -50,7 +50,7 @@ The "Splash" component contains a "React.useEffect()" hook that runs after the c
 The "Splash" component returns a "SafeAreaView" component with a "Text" component displaying the text "POPKINO". The "Text" component has several custom styles defined in the "styles" object, including a custom font, font size, color, and text shadow. The component also has a "logo" style, although it is not used in the returned JSX.
 
 
-2. Welcome Screen/ Introduction Page
+#### 2. Welcome Screen/ Introduction Page
 
 This screen component is named Welcome. The component contains UI elements such as an image background, text, buttons, and a login button group. When rendered, this component displays a welcome screen for the movie app “POPKINO”.
 
@@ -76,7 +76,7 @@ The UI elements are styled using StyleSheet. The component makes use of a Common
 The Welcome component exports itself as a default module, making it available to other parts of the app that need to render it.
 
 
-3. SignUp Screen 
+#### 3. SignUp Screen 
 
 The Signup screen is made with input fields for full name, email and password. When the user presses the "SIGN UP" button, the data entered by the user is stored in the device's local storage using the AsyncStorage (https://reactnative.dev/docs/asyncstorage) API.
 
@@ -91,14 +91,14 @@ The component renders a SafeAreaView that contains an ImageBackground and severa
 Finally, the component renders a View that displays a "Already have an account?" text with a "Login" button that navigates to the login screen when pressed. The divider Container displays a horizontal line with text in between and the footerTextContainer displays a centered "Already have an account?" text with an underlined "Login" button.
 
 
-4. Sign In / Login Screen 
+#### 4. Sign In / Login Screen 
 
 The Sign In screen contains a login form with two input fields for email and password imported from the CustomTextInput Component, a button to submit the form, and social login buttons. The component imports various other components, such as "LoginButtonGroup", and "ActionButton", as well as some styles from the "CommonStyles" module.
 
 The component also uses "AsyncStorage" to retrieve user credentials that were previously stored in the device's local storage. If the entered email and password match the stored credentials, the user is navigated to the home screen, otherwise an error message is logged in the console.
 
 
-5. Home Screen / Movie carousel Tab
+#### 5. Home Screen / Movie carousel Tab
 
 This tab displays a scrollable four lists of movies. The movies are fetched from the API provided by themoviedb (https://www.themoviedb.org/) and organized into four categories: top rated, trending, popular, and upcoming. Each category is displayed in a separate horizontal scroll view. When a user taps on a movie poster, a modal window appears with more information about the movie, including its title, poster, and plot summary. The user can close the modal by tapping on a close button in the top right corner of the modal window.
 
@@ -109,7 +109,7 @@ The screen uses the StyleSheet module to define the styles for the components. T
 Overall, the screen is a simple and functional React Native component that displays a list of movies and allows the user to view more information about each movie.
 
 
-6. MovieFile Screen / Movie Search Tab
+#### 6. MovieFile Screen / Movie Search Tab
 
 This tab allows a user to search for movies using The Movie Database API, and display the search results in a FlatList (https://reactnative.dev/docs/flatlist). The user can then select a movie from the list to view its details, or add it to a watch later list.
 
@@ -124,7 +124,7 @@ When the user taps on the "Add to Watch Later" button, it calls the handleAddToW
 Overall, this component provides a simple interface for searching and browsing movies, and allows the user to easily view more details about a movie or add it to their watch later list.
 
 
-7. MovieDetails Screen
+#### 7. MovieDetails Screen
 
 The MovieDetails screen is a React Native component that displays information about a particular movie, including its title, rating, genres (if available), overview, poster image, cast, and similar movies. The component uses the useEffect hook to fetch information about the movie's cast and similar movies from the The Movie Database (TMDb) API, and the useState hook to manage the component's state, including whether the movie has been added to the user's watch later list. The component also uses the AsyncStorage module to store and retrieve the user's watch later list.
 
@@ -132,7 +132,7 @@ The component renders a ScrollView that contains a View with the movie's poster 
 
 
 
-8. Watch Later Tab
+#### 8. Watch Later Tab
 
 This is the final screen and the last bottom tab  for displaying a list of movies that the user has added to their watch later list. The list is stored in AsyncStorage and retrieved when the component mounts. The component renders a FlatList of the movies, with each item displaying a poster image and the movie title. Each item also has a "remove" button that allows the user to remove the movie from their watch later list.
 
