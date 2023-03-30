@@ -78,7 +78,7 @@ The Welcome component exports itself as a default module, making it available to
 
 3. SignUp Screen 
 
-The Signup screen is made with input fields for full name, email and password. When the user presses the "SIGN UP" button, the data entered by the user is stored in the device's local storage using the AsyncStorage API.
+The Signup screen is made with input fields for full name, email and password. When the user presses the "SIGN UP" button, the data entered by the user is stored in the device's local storage using the AsyncStorage (https://reactnative.dev/docs/asyncstorage) API.
 
 The component imports several components from the react-native library and other custom components, and also imports some assets such as images and icons.
 
@@ -100,9 +100,9 @@ The component also uses "AsyncStorage" to retrieve user credentials that were pr
 
 5. Home Screen / Movie carousel Tab
 
-This tab displays a scrollable four lists of movies. The movies are fetched from the API provided by themoviedb and organized into four categories: top rated, trending, popular, and upcoming. Each category is displayed in a separate horizontal scroll view. When a user taps on a movie poster, a modal window appears with more information about the movie, including its title, poster, and plot summary. The user can close the modal by tapping on a close button in the top right corner of the modal window.
+This tab displays a scrollable four lists of movies. The movies are fetched from the API provided by themoviedb (https://www.themoviedb.org/) and organized into four categories: top rated, trending, popular, and upcoming. Each category is displayed in a separate horizontal scroll view. When a user taps on a movie poster, a modal window appears with more information about the movie, including its title, poster, and plot summary. The user can close the modal by tapping on a close button in the top right corner of the modal window.
 
-The code uses React hooks to manage state. useState hooks are used to store the movie data and the state of the selected movie and the modal. An useEffect hook is used to fetch the movie data from the API when the component mounts. The useNavigation hook is used to navigate between screens in the app. The page also uses the Axios library to make HTTP requests to the themoviedb.org API, the TouchableOpacity component to handle taps on the movie posters, and the Modal component to display the movie information.
+The code uses React hooks to manage state. useState hooks are used to store the movie data and the state of the selected movie and the modal. An useEffect hook is used to fetch the movie data from the API when the component mounts. The useNavigation hook is used to navigate between screens in the app. The page also uses the Axios (https://axios-http.com/docs/intro) library to make HTTP requests to the themoviedb.org API, the TouchableOpacity component to handle taps on the movie posters, and the Modal component to display the movie information.
 
 The screen uses the StyleSheet module to define the styles for the components. The styles include the background color of the container, the margin and font size of the carousel titles, the size and spacing of the movie posters, and the styles for the modal window.
 
@@ -111,7 +111,7 @@ Overall, the screen is a simple and functional React Native component that displ
 
 6. MovieFile Screen / Movie Search Tab
 
-This tab allows a user to search for movies using The Movie Database API, and display the search results in a FlatList. The user can then select a movie from the list to view its details, or add it to a watch later list.
+This tab allows a user to search for movies using The Movie Database API, and display the search results in a FlatList (https://reactnative.dev/docs/flatlist). The user can then select a movie from the list to view its details, or add it to a watch later list.
 
 The component imports various React Native UI components such as TextInput, Button, FlatList, Text, Image, and TouchableOpacity, as well as the useNavigation hook from the '@react-navigation/native' library. It also defines a constant API_KEY, which is used to access The Movie Database API.
 
@@ -128,7 +128,7 @@ Overall, this component provides a simple interface for searching and browsing m
 
 The MovieDetails screen is a React Native component that displays information about a particular movie, including its title, rating, genres (if available), overview, poster image, cast, and similar movies. The component uses the useEffect hook to fetch information about the movie's cast and similar movies from the The Movie Database (TMDb) API, and the useState hook to manage the component's state, including whether the movie has been added to the user's watch later list. The component also uses the AsyncStorage module to store and retrieve the user's watch later list.
 
-The component renders a ScrollView that contains a View with the movie's poster image, title, rating, genres, overview, and watch later button. The watch later button uses the TouchableOpacity component and the Ionicons component from the react-native-vector-icons package to display a bookmark icon that changes color when the user adds or removes the movie from their watch later list. The cast and similar movies sections of the component use FlatList components to display lists of cast members and similar movies, respectively. The cast and similar movie items are rendered using View and TouchableOpacity components, respectively, that contain an image and text representing the cast member or similar movie.
+The component renders a ScrollView that contains a View with the movie's poster image, title, rating, genres, overview, and watch later button. The watch later button uses the TouchableOpacity component and the Ionicons component from the react-native-vector-icons (https://www.npmjs.com/package/react-native-vector-icons) package to display a bookmark icon that changes color when the user adds or removes the movie from their watch later list. The cast and similar movies sections of the component use FlatList components to display lists of cast members and similar movies, respectively. The cast and similar movie items are rendered using View and TouchableOpacity components, respectively, that contain an image and text representing the cast member or similar movie.
 
 
 
