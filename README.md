@@ -20,15 +20,63 @@ contact me: devindu.m@outlook.com / devindu.nwcv@gmail.com
  
  Develop an app that loads movies from an API, search for movies through API, and save movies to a favorite list.
 
-### src/screenshots
+## Content: 
 
-Check out the screenshots file for a UI sneek peek!
+### 1.App Architecture
+### 2.Walkthrough Visual Components and Navigation
+### 3.Development
+### 4.Detailed Description Of The POPKINO App UI
+### 5.src/screenshots
 
-FYI the screenshots were taken while in the dark mode of the device.
+### 1.App Architecture
 
+● Splash screen
+● Introduction page
+● Sign up page
+● Sign in page
+● Movie carousel page
+● MovieList page
+● Movie Search Page
+● Movie Details screen
+● Movie trailer page
+● Watch later page
 
-### Detailed Description Of The POPKINO App UI
+### 2.Walkthrough Visual Components and Navigation
 
+POPKINO, the application, includes a splash screen leading to an introduction page, offering
+users the options to sign up or sign in via Apple or Google authentication. Upon signing up,
+users are directed to a login page with the same authentication options.
+
+The introduction page provides access to the Movie carousel, featuring four carousels of top
+rated, trending, popular, and upcoming movies. Tapping on a movie box opens a popup card,
+displaying larger images, title, and brief overview. Additionally, a "load more" option allows users
+to view more movies in a vertical list.
+
+The application features three primary bottom tabs, allowing users to move between the movie
+carousel, movie search, and "watch later" screens. The movie search tab allows users to search
+for movies of their choice, and selecting a movie navigates the user to the movie details page.
+This page includes the selected movie's image, title, ratings, overview, cast, similar movies, and
+a "play trailer" button.
+
+The movie details page also includes an outlined bookmark icon on the top right corner, which,
+upon tapping, fills up with red color and directs the user to the "watch later" screen, displaying
+the saved movies' image and title. Additionally, the "play trailer" button navigates the user to the
+movie trailer screen, allowing the selected movie trailer to be watched via YouTube.
+
+The "watch later" screen also includes a close button on the top left corner, allowing users to remove unwanted saved movies.
+
+### 3.Development
+
+The app POPKINO was developed using:
+
+● React Native (https://reactnative.dev/)
+● Axios (https://axios-http.com/docs/intro)
+● The Moviedb API (https://developers.themoviedb.org/)
+● And the basic react native components (async storage, bottom tabs, native, native
+stack, gesture handler, linear gradient, reanimated, safe area context, screens,
+svg, vector icons and webview)
+
+### 4.Detailed Description Of The POPKINO App UI
 
 #### 1. Splash Screen
 
@@ -39,7 +87,6 @@ The component imports various React Native components and modules, such as "Safe
 The "Splash" component contains a "React.useEffect()" hook that runs after the component mounts. This hook sets a timeout of 2.5 seconds before checking whether a user exists in AsyncStorage. If a user exists, the component navigates to the "TAB_HOME" screen. Otherwise, it navigates to the "WELCOME" or introduction screen.
 
 The "Splash" component returns a "SafeAreaView" component with a "Text" component displaying the text "POPKINO". The "Text" component has several custom styles defined in the "styles" object, including a custom font, font size, color, and text shadow. The component also has a "logo" style, although it is not used in the returned JSX.
-
 
 
 #### 2. Welcome Screen/ Introduction Page
@@ -54,13 +101,13 @@ The background image is styled using StyleSheet to fill the height and width of 
 
 Inside the LinearGradient, there is a View component that wraps the rest of the UI elements of the screen. These elements include:
 
-ActionButton component, which is a custom button component that takes in a title prop, an onPressBtn function, customStyle prop, and customTextStyle prop. This button is used to skip the welcome screen and navigate to the home screen of the app.
-Text component displaying the title of the app.
-Another text component displaying a subtitle for the app.
-View component containing a horizontal divider and text for the sign-in section.
-LoginButtonGroup component, which is a custom component that displays login buttons for your user accounts by apple and google.
-ActionButton component used to navigate to the sign-up screen.
-View component containing text and an ActionButton component used to navigate to the sign-in screen.
+● ActionButton component, which is a custom button component that takes in a title prop, an onPressBtn function, customStyle prop, and customTextStyle prop. This button is used to skip the welcome screen and navigate to the home screen of the app.
+● Text component displaying the title of the app.
+● Another text component displaying a subtitle for the app.
+● View component containing a horizontal divider and text for the sign-in section.
+● LoginButtonGroup component, which is a custom component that displays login buttons for your user accounts by apple and google.
+● ActionButton component used to navigate to the sign-up screen.
+● View component containing text and an ActionButton component used to navigate to the sign-in screen.
 
 
 The UI elements are styled using StyleSheet. The component makes use of a CommonStyles object that contains common styles used throughout the app, including colors, fonts, and dimensions.
@@ -68,10 +115,9 @@ The UI elements are styled using StyleSheet. The component makes use of a Common
 The Welcome component exports itself as a default module, making it available to other parts of the app that need to render it.
 
 
-
 #### 3. SignUp Screen 
 
-The Signup screen is made with input fields for full name, email and password. When the user presses the "SIGN UP" button, the data entered by the user is stored in the device's local storage using the AsyncStorage API.
+The Signup screen is made with input fields for full name, email and password. When the user presses the "SIGN UP" button, the data entered by the user is stored in the device's local storage using the AsyncStorage (https://reactnative.dev/docs/asyncstorage) API.
 
 The component imports several components from the react-native library and other custom components, and also imports some assets such as images and icons.
 
@@ -84,13 +130,11 @@ The component renders a SafeAreaView that contains an ImageBackground and severa
 Finally, the component renders a View that displays a "Already have an account?" text with a "Login" button that navigates to the login screen when pressed. The divider Container displays a horizontal line with text in between and the footerTextContainer displays a centered "Already have an account?" text with an underlined "Login" button.
 
 
-
 #### 4. Sign In / Login Screen 
 
 The Sign In screen contains a login form with two input fields for email and password imported from the CustomTextInput Component, a button to submit the form, and social login buttons. The component imports various other components, such as "LoginButtonGroup", and "ActionButton", as well as some styles from the "CommonStyles" module.
 
 The component also uses "AsyncStorage" to retrieve user credentials that were previously stored in the device's local storage. If the entered email and password match the stored credentials, the user is navigated to the home screen, otherwise an error message is logged in the console.
-
 
 
 #### 5. Home Screen / Movie carousel Tab
@@ -104,26 +148,26 @@ The screen uses the StyleSheet module to define the styles for the components. T
 Overall, the screen is a simple and functional React Native component that displays a list of movies and allows the user to view more information about each movie.
 
 
-
 #### 6. Load More List 
 
 In the MovieList screen which fetches and displays a list of top-rated movies using the API provided by The Movie Database (TMDb).
-It has the following features:
-Uses the useState hook to store the movie data in the movies state variable, the current page number in the currentPage state variable, and the total number of pages in the totalPages state variable.
-Uses the useEffect hook to fetch the initial set of movies when the component mounts.
-Uses the FlatList component to render the list of movies.
-Uses the renderMovie function to render each individual movie item in the list.
-Displays the movie title, poster image, and rating in the list item.
-Uses the Icon component from the react-native-vector-icons library to display a star icon for each rating point.
-Allows the user to load more movies by clicking the "Load More" button at the bottom of the list, using the onEndReached and onEndReachedThreshold props of FlatList.
 
+It has the following features:
+
+● Uses the useState hook to store the movie data in the movies state variable, the current page number in the currentPage state variable, and the total number of pages in the totalPages state variable.
+● Uses the useEffect hook to fetch the initial set of movies when the component mounts.
+● Uses the FlatList component to render the list of movies.
+● Uses the renderMovie function to render each individual movie item in the list.
+● Displays the movie title, poster image, and rating in the list item.
+● Uses the Icon component from the react-native-vector-icons library to display a star icon for each rating point.
+● Allows the user to load more movies by clicking the "Load More" button at the bottom of the list, using the onEndReached and onEndReachedThreshold props of FlatList.
 
 
 #### 7. MovieFile Screen / Movie Search Tab
 
-This tab allows a user to search for movies using The Movie Database API, and display the search results in a FlatList. The user can then select a movie from the list to view its details, or add it to a watch later list.
+This tab allows a user to search for movies using The Movie Database API, and display the search results in a FlatList (https://reactnative.dev/docs/flatlist). The user can then select a movie from the list to view its details, or add it to a watch later list.
 
-The component imports various React Native UI components such as TextInput, Button, FlatList, Text, Image, and TouchableOpacity, as well as the useNavigation hook from the '@react-navigation/native' library. It also defines a constant API_KEY, which is used to access The Movie Database API.
+The component imports various React Native UI components such as TextInput, Button, FlatList, Text, Image, and TouchableOpacity, as well as the useNavigation hook from the '@react-navigation/native' library. It also defines a constant API_KEY (https://stackoverflow.com/questions/18205134/what-is-the-api-key-and-how-do-i-use-it-correctly), which is used to access The Movie Database API.
 
 The component uses the useState hook to manage state variables. The searchQuery state variable stores the user's input in the search bar, while the movies state variable stores the search results.
 When the user presses the search button, the handleSearch function is called, which sends a GET request to the API using the fetch function. The response is then parsed as JSON and stored in the movies state variable.
@@ -132,7 +176,6 @@ The renderMovie function is used to render each movie item in the FlatList. It d
 
 When the user taps on the "Add to Watch Later" button, it calls the handleAddToWatchLater function to navigate to the WatchLaterList screen and pass the selected movie as a parameter.
 Overall, this component provides a simple interface for searching and browsing movies, and allows the user to easily view more details about a movie or add it to their watch later list.
-
 
 
 #### 8. MovieDetails Screen
@@ -148,19 +191,18 @@ The handleWatchLater function is called when the user clicks the watch later but
 Overall, the component provides a user-friendly interface for displaying movie details , links to youtube API to watch trailers and allows the user to save movies for later viewing.
 
 
-
 #### 9. Movie Trailer Screen
 
 This screen displays a movie trailer using the YouTube API. Here are the features:
-The component MovieTrailerScreen receives a route prop which contains information about the movie.
-The component uses the useState hook to define a trailerKey state variable which will be used to store the trailer video ID.
-The component uses the useEffect hook to fetch the movie trailer information from the TMDB API when the component mounts or when the movieId prop changes.
-If a trailer video is found, its ID is stored in the trailerKey state variable using the setTrailerKey function.
-The component renders a loading message if the trailerKey is null.
-If the trailerKey is not null, the component renders a WebView component that loads the YouTube video using the trailerKey as the ID.
-The styles object defines some basic styles for the container. 
-Overall, this component fetches the movie trailer from the TMDB API and displays it in a WebView component using the YouTube API. It also handles loading states and error handling using try/catch blocks.
 
+● The component MovieTrailerScreen receives a route prop which contains information about the movie.
+● The component uses the useState hook to define a trailerKey state variable which will be used to store the trailer video ID.
+● The component uses the useEffect hook to fetch the movie trailer information from the TMDB API when the component mounts or when the movieId prop changes.
+● If a trailer video is found, its ID is stored in the trailerKey state variable using the setTrailerKey function.
+● The component renders a loading message if the trailerKey is null.
+● If the trailerKey is not null, the component renders a WebView component that loads the YouTube video using the trailerKey as the ID.
+● The styles object defines some basic styles for the container. 
+Overall, this component fetches the movie trailer from the TMDB API and displays it in a WebView component using the YouTube API. It also handles loading states and error handling using try/catch blocks.
 
 
 #### 10. Watch Later Tab
@@ -172,5 +214,8 @@ The component has two useEffect hooks, one for retrieving the watch later list f
 Overall, this component provides a basic functionality for managing a watch later list of movies in the POPKINO app.
 
 
+### 5.src/screenshots
 
+Check out the screenshots file for a UI sneek peek!
 
+FYI the screenshots were taken while in the dark mode of the device.
