@@ -70,8 +70,11 @@ The "watch later" screen also includes a close button on the top left corner, al
 The app POPKINO was developed using:
 
 ● React Native (https://reactnative.dev/)
+
 ● Axios (https://axios-http.com/docs/intro)
+
 ● The Moviedb API (https://developers.themoviedb.org/)
+
 ● And the basic react native components (async storage, bottom tabs, native, native
 stack, gesture handler, linear gradient, reanimated, safe area context, screens,
 svg, vector icons and webview)
