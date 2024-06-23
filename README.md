@@ -223,27 +223,25 @@ Overall, this component provides a basic functionality for managing a watch-late
 
 Check out the screenshots file for a UI sneak peek!
 
-<img src="https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab" width=50% height=50%>
-
-![001icon_ _app-name](https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab)
-[002splash](https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211)
-![003intro](https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707)
-![004signup](https://github.com/devindu22/POPKINO/assets/114844896/38de7d95-32ca-4f53-be98-4d01fe308c26)
-![006browse](https://github.com/devindu22/POPKINO/assets/114844896/fbc6259c-fb47-4592-9ad1-caee2a4c8c7f)
-![007browse](https://github.com/devindu22/POPKINO/assets/114844896/f67ccdce-c565-422d-90bd-c19f5bab17c2)
-![008infocard](https://github.com/devindu22/POPKINO/assets/114844896/cf337339-be17-43fa-a254-6466a512459f)
-![010infocard](https://github.com/devindu22/POPKINO/assets/114844896/36e932be-54e8-4444-887c-1798969f55aa)
-![09infocard](https://github.com/devindu22/POPKINO/assets/114844896/1e38858d-a4a8-44d8-8a87-e40caf252264)
-![011infocard](https://github.com/devindu22/POPKINO/assets/114844896/31b0f55b-9eae-4e9d-b961-9ee7e7f931f4)
-![012search_tab](https://github.com/devindu22/POPKINO/assets/114844896/d599fe84-423b-4a13-9bea-f2b27ebf7f0e)
-![013searching_item](https://github.com/devindu22/POPKINO/assets/114844896/b3758866-26a8-4001-b51c-8e85590887f0)
-![014searching_item](https://github.com/devindu22/POPKINO/assets/114844896/4722c735-9886-44bb-a0c3-1348f531ea88)
-![015searching_item](https://github.com/devindu22/POPKINO/assets/114844896/88716d04-8625-4ffe-bfd8-e04939dd3b5c)
-![017item_detail](https://github.com/devindu22/POPKINO/assets/114844896/8ec794ec-6034-4ec6-8e9f-f2d89bfa2e45)
-![018item_detail](https://github.com/devindu22/POPKINO/assets/114844896/132d56b6-3e43-466b-9a4d-cf0bb314f1d1)
-![024watch_later_list](https://github.com/devindu22/POPKINO/assets/114844896/c3944aa3-f7ca-44eb-be21-8360731f4b72)
-![033movie_list](https://github.com/devindu22/POPKINO/assets/114844896/4f9fa1df-19f7-4a63-a275-a82a3af3bb69)
-![034trailer_button](https://github.com/devindu22/POPKINO/assets/114844896/e5f95c0c-26b6-4b6e-8ffd-4e1f04723195)
-![035trailer_screen](https://github.com/devindu22/POPKINO/assets/114844896/5a2f7c1d-2502-4677-91b3-baa7704f8d74)
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/38de7d95-32ca-4f53-be98-4d01fe308c26" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/fbc6259c-fb47-4592-9ad1-caee2a4c8c7f" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/f67ccdce-c565-422d-90bd-c19f5bab17c2" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/cf337339-be17-43fa-a254-6466a512459f" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/36e932be-54e8-4444-887c-1798969f55aa" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/1e38858d-a4a8-44d8-8a87-e40caf252264" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/31b0f55b-9eae-4e9d-b961-9ee7e7f931f4" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/d599fe84-423b-4a13-9bea-f2b27ebf7f0e" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/b3758866-26a8-4001-b51c-8e85590887f0" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/4722c735-9886-44bb-a0c3-1348f531ea88" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/88716d04-8625-4ffe-bfd8-e04939dd3b5c" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/8ec794ec-6034-4ec6-8e9f-f2d89bfa2e45" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/132d56b6-3e43-466b-9a4d-cf0bb314f1d1" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/c3944aa3-f7ca-44eb-be21-8360731f4b72" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/4f9fa1df-19f7-4a63-a275-a82a3af3bb69" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/e5f95c0c-26b6-4b6e-8ffd-4e1f04723195" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/5a2f7c1d-2502-4677-91b3-baa7704f8d74" width=25% height=25%>
 
 FYI the screenshots were taken while in the dark mode of the device.
