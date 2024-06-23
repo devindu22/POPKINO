@@ -223,6 +223,7 @@ Overall, this component provides a basic functionality for managing a watch-late
 
 Check out the screenshots file for a UI sneak peek!
 
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab" width=50% height=50%>
 
 ![001icon_ _app-name](https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab)
 [002splash](https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211)
