@@ -105,11 +105,17 @@ The background image is styled using StyleSheet to fill the height and width of 
 Inside the LinearGradient, there is a View component that wraps the rest of the UI elements of the screen. These elements include:
 
 ● ActionButton component, which is a custom button component that takes in a title prop, an onPressBtn function, customStyle prop, and customTextStyle prop. This button is used to skip the welcome screen and navigate to the home screen of the app.
+
 ● Text component displaying the title of the app.
+
 ● Another text component displaying a subtitle for the app.
+
 ● View component containing a horizontal divider and text for the sign-in section.
+
 ● LoginButtonGroup component, which is a custom component that displays login buttons for your user accounts by Apple and Google.
+
 ● ActionButton component used to navigate to the sign-up screen.
+
 ● View component containing text and an ActionButton component used to navigate to the sign-in screen.
 
 
@@ -159,11 +165,17 @@ In the MovieList screen which fetches and displays a list of top-rated movies us
 It has the following features:
 
 ● Uses the useState hook to store the movie data in the movies state variable, the current page number in the currentPage state variable, and the total number of pages in the totalPages state variable.
+
 ● Uses the useEffect hook to fetch the initial set of movies when the component mounts.
+
 ● Uses the FlatList component to render the list of movies.
+
 ● Uses the renderMovie function to render each movie item in the list.
+
 ● Displays the movie title, poster image, and rating in the list item.
+
 ● Uses the Icon component from the react-native-vector-icons library to display a star icon for each rating point.
+
 ● Allows the user to load more movies by clicking the "Load More" button at the bottom of the list, using the onEndReached and onEndReachedThreshold props of FlatList.
 
 
@@ -201,12 +213,19 @@ Overall, the component provides a user-friendly interface for displaying movie d
 This screen displays a movie trailer using the YouTube API. Here are the features:
 
 ● The component MovieTrailerScreen receives a route prop that contains information about the movie.
+
 ● The component uses the useState hook to define a trailerKey state variable which will be used to store the trailer video ID.
+
 ● The component uses the useEffect hook to fetch the movie trailer information from the TMDB API when the component mounts or when the movie prop changes.
+
 ● If a trailer video is found, its ID is stored in the trailerKey state variable using the setTrailerKey function.
+
 ● The component renders a loading message if the trailerKey is null.
+
 ● If the trailerKey is not null, the component renders a WebView component that loads the YouTube video using the trailerKey as the ID.
+
 ● The styles object defines some basic styles for the container. 
+
 Overall, this component fetches the movie trailer from the TMDB API and displays it in a WebView component using the YouTube API. It also handles loading states and error handling using try/catch blocks.
 
 
@@ -231,26 +250,55 @@ Splash
 
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
 
-Sign Up
+Sign Up Skip
 
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
 
+Sign Up Form
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/38de7d95-32ca-4f53-be98-4d01fe308c26" width=25% height=25%>
+
+Home / Browse
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/fbc6259c-fb47-4592-9ad1-caee2a4c8c7f" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/f67ccdce-c565-422d-90bd-c19f5bab17c2" width=25% height=25%>
+
+Brief Description of the movie 
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/cf337339-be17-43fa-a254-6466a512459f" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/36e932be-54e8-4444-887c-1798969f55aa" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/1e38858d-a4a8-44d8-8a87-e40caf252264" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/31b0f55b-9eae-4e9d-b961-9ee7e7f931f4" width=25% height=25%>
+
+Search
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/d599fe84-423b-4a13-9bea-f2b27ebf7f0e" width=25% height=25%>
+
+Search Results
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/b3758866-26a8-4001-b51c-8e85590887f0" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/4722c735-9886-44bb-a0c3-1348f531ea88" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/88716d04-8625-4ffe-bfd8-e04939dd3b5c" width=25% height=25%>
+
+Full Description of the Movie 
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/8ec794ec-6034-4ec6-8e9f-f2d89bfa2e45" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/132d56b6-3e43-466b-9a4d-cf0bb314f1d1" width=25% height=25%>
+
+Watch Later
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/c3944aa3-f7ca-44eb-be21-8360731f4b72" width=25% height=25%>
+
+More Button - Movie List
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/4f9fa1df-19f7-4a63-a275-a82a3af3bb69" width=25% height=25%>
+
+Trailer button
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/e5f95c0c-26b6-4b6e-8ffd-4e1f04723195" width=25% height=25%>
+
+Trailer Video Screen
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/5a2f7c1d-2502-4677-91b3-baa7704f8d74" width=25% height=25%>
 
-FYI the screenshots were taken while in the dark mode of the device.
+### FYI the screenshots were taken while in the dark mode of the device.
