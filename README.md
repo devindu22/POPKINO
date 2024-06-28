@@ -48,13 +48,13 @@ users the option to sign up or sign in via Apple or Google authentication. Upon 
 users are directed to a login page with the same authentication options.
 
 The introduction page provides access to the Movie carousel, featuring four carousels of top-rated, trending, popular, and upcoming movies. Tapping on a movie box opens a popup card,
-displaying larger images, a title, and a brief overview. Additionally, a "load more" option allows users
+displaying larger images, a title, and a brief overview. A "load more" option also allows users
 to view more movies in a vertical list.
 
 The application features three primary bottom tabs, allowing users to move between the movie
-carousel, movie search, and "watch later" screens. The movie search tab allows users to search
+carousel, movie search, and "watch later" screens. The movie search tab enables users to search
 for movies of their choice, and selecting a movie navigates the user to the movie details page.
-This page includes the selected movie's image, title, ratings, overview, cast, similar movies, and
+This page includes the chosen movie's image, title, ratings, overview, cast, similar movies, and
 a "play trailer" button.
 
 The movie details page also includes an outlined bookmark icon on the top right corner, which,
@@ -108,7 +108,7 @@ Inside the LinearGradient, there is a View component that wraps the rest of the 
 ● Text component displaying the title of the app.
 ● Another text component displaying a subtitle for the app.
 ● View component containing a horizontal divider and text for the sign-in section.
-● LoginButtonGroup component, which is a custom component that displays login buttons for your user accounts by apple and Google.
+● LoginButtonGroup component, which is a custom component that displays login buttons for your user accounts by Apple and Google.
 ● ActionButton component used to navigate to the sign-up screen.
 ● View component containing text and an ActionButton component used to navigate to the sign-in screen.
 
@@ -184,7 +184,7 @@ Overall, this component provides a simple interface for searching and browsing m
 
 #### 8. MovieDetails Screen
 
-The MovieDetails screen is displaying details of a movie, including its title, poster, rating, genres, overview, cast, and similar movies. The component fetches the cast and similar movie![004signup]
+The MovieDetails screen is displaying details of a movie, including its title, poster, rating, genres, overview, cast, and similar movies. The component fetches the cast and a similar movie![004signup]
  data from the TMDB API and stores the watch-later list in the local storage of the device.
 
 The component consists of a ScrollView that wraps a View containing the movie poster, play button, movie details (title, rating, genres, overview), watch later button, cast container, and similar movies container.
@@ -223,9 +223,12 @@ Overall, this component provides a basic functionality for managing a watch-late
 
 Check out the screenshots file for a UI sneak peek!
 
+App Icon
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab" width=25% height=25%>
-<img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
-<img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
+
+Splash<img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
+
+Sign Up <img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/38de7d95-32ca-4f53-be98-4d01fe308c26" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/fbc6259c-fb47-4592-9ad1-caee2a4c8c7f" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/f67ccdce-c565-422d-90bd-c19f5bab17c2" width=25% height=25%>
