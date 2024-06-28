@@ -224,11 +224,17 @@ Overall, this component provides a basic functionality for managing a watch-late
 Check out the screenshots file for a UI sneak peek!
 
 App Icon
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/fddf684a-592d-4758-81bb-777767cb69ab" width=25% height=25%>
 
-Splash<img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
+Splash
 
-Sign Up <img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/0c6d9bda-2cae-4a13-ab8c-aff288544211" width=25% height=25%>
+
+Sign Up
+
+<img src="https://github.com/devindu22/POPKINO/assets/114844896/dafe3330-8024-4374-b663-76b0989b7707" width=25% height=25%>
+
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/38de7d95-32ca-4f53-be98-4d01fe308c26" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/fbc6259c-fb47-4592-9ad1-caee2a4c8c7f" width=25% height=25%>
 <img src="https://github.com/devindu22/POPKINO/assets/114844896/f67ccdce-c565-422d-90bd-c19f5bab17c2" width=25% height=25%>
