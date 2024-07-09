@@ -48,8 +48,7 @@ users the option to sign up or sign in via Apple or Google authentication. Upon 
 users are directed to a login page with the same authentication options.
 
 The introduction page provides access to the Movie carousel, featuring four carousels of top-rated, trending, popular, and upcoming movies. Tapping on a movie box opens a popup card,
-displaying larger images, a title, and a brief overview. A "load more" option also allows users
-to view more movies in a vertical list.
+displaying larger images, a title, and a brief overview. A "load more" option lets users view more movies in a vertical list.
 
 The application features three primary bottom tabs, allowing users to move between the movie
 carousel, movie search, and "watch later" screens. The movie search tab enables users to search
@@ -76,7 +75,7 @@ The app POPKINO was developed using:
 
 ● And the basic react native components (async storage, bottom tabs, native, native
 stack, gesture handler, linear gradient, reanimated, safe area context, screens,
-svg, vector icons and webview)
+svg, vector icons, and webview)
 
 ### 4. Detailed Description Of The POPKINO App UI
 
@@ -86,9 +85,9 @@ This React Native functional component is named "Splash", and serves as a splash
 
 The component imports various React Native components and modules, such as "SafeAreaView", "StyleSheet", "StatusBar", "Text", "AsyncStorage", and "Route". It also imports a custom module named "CommonStyles" that contains common style definitions for the application.
 
-The "Splash" component contains a "React.useEffect()" hook that runs after the component mounts. This hook sets a timeout of 2.5 seconds before checking whether a user exists in AsyncStorage. If a user exists, the component navigates to the "TAB_HOME" screen. Otherwise, it navigates to the "WELCOME" or introduction screen.
+The "Splash" component contains a "React.useEffect()" hook that runs after the component mounts. This hook sets a timeout of 2.5 seconds before checking whether a user exists in AsyncStorage. The component navigates to the "TAB_HOME" screen if a user exists. Otherwise, it navigates to the "WELCOME" or introduction screen.
 
-The "Splash" component returns a "SafeAreaView" component with a "Text" component displaying the text "POPKINO". The "Text" component has several custom styles defined in the "styles" object, including a custom font, font size, color, and text shadow!
+The "Splash" component returns a "SafeAreaView" component with a "Text" component displaying the text "POPKINO". The "Text" component has several custom styles defined in the "styles" object, including a custom font, font size, color, and text-shadow!
 . The component also has a "logo" style, although it is not used in the returned JSX.
 
 
