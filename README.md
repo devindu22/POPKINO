@@ -88,16 +88,16 @@ The component imports various React Native components and modules, such as "Safe
 The "Splash" component contains a "React.useEffect()" hook that runs after the component mounts. This hook sets a timeout of 2.5 seconds before checking whether a user exists in AsyncStorage. The component navigates to the "TAB_HOME" screen if a user exists. Otherwise, it navigates to the "WELCOME" or introduction screen.
 
 The "Splash" component returns a "SafeAreaView" component with a "Text" component displaying the text "POPKINO". The "Text" component has several custom styles defined in the "styles" object, including a custom font, font size, color, and text-shadow!
-. The component also has a "logo" style, although it is not used in the returned JSX.
+. The component also has a "logo" style, which is not used in the returned JSX.
 
 
 #### 2. Welcome Screen/ Introduction Page
 
-This screen component is named Welcome. The component contains UI elements such as an image background, text, buttons, and a login button group. When rendered, this component displays a welcome screen for the movie app “POPKINO”.
+This screen component is named Welcome. The component contains UI elements such as an image background, text, buttons, and a login button group. This component displays a welcome screen for the movie app “POPKINO” when rendered.
 
 The Welcome component takes in a navigation prop, which allows it to navigate between different screens of the app using React Navigation.
 
-The render method of the component returns a SafeAreaView component, which provides a safe area for rendering content on the screen. Inside the SafeAreaView, there is an ImageBackground component that displays a background image for the screen.
+The render method of the component returns a SafeAreaView component, which provides a safe area for rendering content on the screen. Inside the SafeAreaView is an ImageBackground component that displays a background image for the screen.
 
 The background image is styled using StyleSheet to fill the height and width of the screen. Also made with the help of AI (https://imgcreator.zmo.ai/genwitht). The LinearGradient component overlays the image with a semi-transparent gradient to make the text more legible.
 
